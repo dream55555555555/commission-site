@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>委託網站</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>星的委託網站</title>
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d1a;
+      color: #f0f0f0;
+      line-height: 1.6;
+      background-image: radial-gradient(white 1px, transparent 1px),
+                        radial-gradient(white 1px, transparent 1px);
+      background-size: 50px 50px;
+      background-position: 0 0, 25px 25px;
+      animation: twinkle 3s infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+
+    header, section, footer {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(20, 20, 40, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      margin-bottom: 20px;
+    }
+
+    header {
+      background-color: rgba(80, 60, 120, 0.8);
+      text-align: center;
+      border-bottom: 2px solid #aa88ff;
+    }
+
+    h1, h2 {
+      color: #ffccff;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #99ccff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .example-img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border: 1px solid #888;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    }
+
+    .example-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+      filter: brightness(1.1);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      border-top: 1px solid #444;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,18 +89,18 @@
   </header>
 
   <section id="notes">
-    <h2>🌟委託注意事項</h2>
+    <h2>🌟 委託注意事項</h2>
     <ul>
       <li>請先詳讀注意事項再進行委託</li>
-      <li>排單後付半額訂金-付款後開始繪製-草圖確認付尾款，排單付訂金如事後個人因素取消概不退款</li>
-      <li>完成品可作為公開展示,如需不公開請提前詢問並討論相關事項</li>
+      <li>排單後付半額訂金－付款後開始繪製－草圖確認付尾款，排單付訂金如事後個人因素取消概不退款</li>
+      <li>完成品可作為公開展示，如需不公開請提前詢問並討論相關事項</li>
       <li>完稿確認沒問題會以 Gmail 交件</li>
       <li>未成年匯款視作父母或監護人已同意委託並同意所有委託規則‼️</li>
     </ul>
   </section>
 
   <section id="examples">
-    <h2>🌠範例圖</h2>
+    <h2>🌠 範例圖</h2>
     <img src="https://raw.githubusercontent.com/dream55555555555/commission-site/main/%E5%96%AE%E4%BA%BA%E7%B5%84%E5%90%88.jpg" alt="單人組合" class="example-img">
     <img src="https://raw.githubusercontent.com/dream55555555555/commission-site/main/%E9%9B%99%E4%BA%BA%E7%B5%84%E5%90%88.jpg" alt="雙人組合" class="example-img">
     <img src="https://raw.githubusercontent.com/dream55555555555/commission-site/main/%E9%9B%99%E4%BA%BA%E5%A4%A7%E9%A0%AD.jpg" alt="雙人大頭" class="example-img">
@@ -33,7 +110,7 @@
   </section>
 
   <section id="items">
-    <h2>💫品項</h2>
+    <h2>💫 品項</h2>
     <ul>
       <li>頭像 NT$600</li>
       <li>半身 NT$1000</li>
@@ -42,16 +119,16 @@
     </ul>
   </section>
 
-   <section id="payment">
-    <h2>🌌匯款方式</h2>
+  <section id="payment">
+    <h2>🌌 匯款方式</h2>
     <p>接受銀行轉帳</p>
   </section>
 
   <section id="links">
-    <h2>🌟個人帳號連結</h2>
+    <h2>🌟 個人帳號連結</h2>
     <ul>
-      <li><a href="https://www.instagram.com/ting_1019_qq?igsh=MXIwYzd5bXo1NjBqMg%3D%3D&utm_source=qr" target="_blank">星</a></li>
-      <li><a href="https://x.com/xing_1019?s=21" target="_blank">Xing_1019</a></li>
+      <li><a href="https://www.instagram.com/ting_1019_qq?igsh=MXIwYzd5bXo1NjBqMg%3D%3D&utm_source=qr" target="_blank">Instagram：星</a></li>
+      <li><a href="https://x.com/xing_1019?s=21" target="_blank">X (Twitter)：Xing_1019</a></li>
     </ul>
   </section>
 
@@ -60,3 +137,4 @@
   </footer>
 </body>
 </html>
+
